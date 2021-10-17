@@ -1,10 +1,6 @@
 import { useEffect, useState } from 'react'
 import styled, { css } from 'styled-components'
-import { getRandom } from '../../helpers'
-import { Icon } from '../../interfaces'
-import { SvgIcon } from '../SvgIcon'
-
-
+import { getRandom, responsive } from '../../helpers'
 
 const references: ReferenceProps[] = [
     {
@@ -68,14 +64,24 @@ font-size: 14px;
 text-align: center;
 padding: 0 18px;
 width: 100%;
+margin: 28px 0 14px 0;
+
 
 h5 {
+    margin: 0 0 4px 0;
     padding: 0;
-    margin: 8px 0;
     font-size: 14px;
     font-weight: 400;
     color: ${props.theme.colors.lowContrast};
 }
+
+${responsive({
+    gtemd: css`
+    h5 {
+        font-size: 16px;
+    }
+    `
+})}
 `}
 `
 
@@ -88,6 +94,12 @@ span {
     font-family: '${props.theme.font.fancy}', serif;
     font-size: 16px;
     line-height: 18px;
+    ${responsive({
+    gtemd: css`
+    font-size: 20px;
+    line-height: 24px;
+    `
+})}
 }
 a {
     color: ${props.theme.colors.lowContrast};
@@ -103,6 +115,15 @@ ${props => css`
 display: grid;
 grid-gap: 8px;
 grid-template-rows: auto;
+
+${responsive({
+    gtemd: css`
+        grid-template-columns: 1fr 1fr;
+        max-width: 480px;
+        margin: 0 auto;
+    `
+})}
+
 `}
 `
 
@@ -117,6 +138,12 @@ padding: 0;
 margin: 0;
 color: ${props.theme.colors.lowContrast};
 cursor: pointer;
+
+${responsive({
+    gtemd: css`
+    font-size: 12px;
+    `
+})}
 `}
 `
 

@@ -15,17 +15,26 @@ h1 {
     margin: 0;
 }
 padding: 0 18px;
-margin: 36px 0;
-
+margin: 48px 0 36px 0;
 ${responsive({
     gtemd: css`
-        margin: 40px 0;
-        padding: 0 120px;
+        margin: 62px 0 36px 0;
+        padding: 0 62px;
         h1 {
-            font-size: 82px;
-            line-height: 100px;
+            font-size: 78px;
+            line-height: 82px;
         }
     `,
+    gtelg: css`
+        width: 100%;
+        h1 {
+            font-size: 78px;
+            line-height: 82px;
+            max-width: 880px;
+            margin: 0 auto;
+        }
+    `,
+
 })}
 `}
 `

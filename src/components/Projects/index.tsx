@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import { responsive } from '../../helpers'
 import { Icon } from '../../interfaces'
 import { SvgIcon } from '../SvgIcon'
 
@@ -17,6 +18,16 @@ h2 {
     font-weight: 400;
     color: ${props.theme.colors.lowContrast};
 }
+
+${responsive({
+    gtemd: css`
+        padding: 0 62px;
+        margin-bottom: 36px;
+        h2 {
+            font-size: 18px;
+        };
+    `,
+})}
 `}
 `
 
@@ -60,6 +71,7 @@ span {
         color: ${props.theme.colors.grey};
     }
 }
+
 `}
 `
 
@@ -68,6 +80,12 @@ ${props => css`
 display: inline-flex;
 flex-flow: row wrap;
 justify-content: center;
+
+${responsive({
+    gtemd: css`
+    max-width: 580px;
+    `,
+})}
 `}
 `
 
@@ -80,6 +98,11 @@ interface ProjectProps {
 
 const allProjects: ProjectProps[] = [
     {
+        url: 'https://github.com/sebasalines/sebasalines',
+        title: 'this-portfolio',
+        lang: 'React',
+    },
+    {
         url: 'https://poweredbyliquid.com',
         title: 'Liquid',
         icon: 'globe',
@@ -89,6 +112,12 @@ const allProjects: ProjectProps[] = [
         url: 'https://github.com/sebasalines/electron-react-ts',
         title: 'electron-react-ts',
         lang: 'Electron, React',
+    },
+    {
+        url: 'https://www.socialwyze.com',
+        title: 'Socialwyze',
+        icon: 'globe',
+        lang: 'React Native',
     },
     {
         url: 'https://github.com/sebasalines/spotifier',
@@ -106,12 +135,7 @@ const allProjects: ProjectProps[] = [
         title: 'gql-dashboard',
         lang: 'Graphql, Angular, React',
     },
-    {
-        url: 'https://www.socialwyze.com',
-        title: 'Socialwyze',
-        icon: 'globe',
-        lang: 'React Native',
-    },
+    
 ]
 
 

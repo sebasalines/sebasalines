@@ -42,8 +42,8 @@ export const Presentation: React.FC = props => {
                     Let's do some software stuff, maybe?
                 </Cta>
                 <Projects />
-                <References />
                 <Contact />
+                <References />
             </main>
             <Footer />
         </Column>

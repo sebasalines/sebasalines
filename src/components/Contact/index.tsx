@@ -19,8 +19,11 @@ p {
 
 ${responsive({
     gtemd: css`
+        margin: 42px auto;
         p {
-            max-width: 800px;
+            max-width: 480px;
+            font-size: 18px;
+            line-height: 20px;
         }
     `,
 })}
@@ -33,7 +36,7 @@ export const Contact: React.FC = props => {
         <Container>
             <p>I'm always open to build cool software and I'm very tech-agnostic, so feel free get in touch and let's talk about your project ideas.</p>
             <br />
-            <p>The best way to reach me is to <a href="mailto:salines.sebastian@gmail.com" rel="noreferrer" target="_blank">send me an email</a>, you can also <a href="javacript:void(0)" rel="noreferrer" target="_blank">download my CV</a>; if you're into that kind of stuff.</p>
+            <p>The best way to reach me is to <a href="mailto:salines.sebastian@gmail.com" rel="noreferrer" target="_blank">send me an email</a>. You can also <a href="javacript:void(0)" rel="noreferrer" target="_blank">download my CV</a>, if you're into that kind of thing.</p>
         </Container>
     )
 }

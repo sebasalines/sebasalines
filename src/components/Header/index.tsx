@@ -1,10 +1,21 @@
 import styled, { css } from 'styled-components'
+import { responsive } from '../../helpers';
 
 const Base = styled.header`
 ${props => css`
 background-color: ${props.theme.colors.white};
 width: 100%;
 padding: 8px 0 16px 0;
+
+${responsive({
+    gtemd: css`
+        display: flex;
+        padding: 0 62px;
+        margin-top: 18px;
+    `,
+
+})}
+
 `}
 `;
 
@@ -28,6 +39,13 @@ span {
         line-height: 12px;
     }
 }
+
+${responsive({
+    gtemd: css`
+        padding-left: 62px;
+    `,
+
+})}
 
 `}
 `
