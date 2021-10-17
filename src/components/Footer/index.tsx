@@ -55,7 +55,7 @@ const FooterLinkItem = props => {
 export const Footer: React.FC = props => {
     return (
         <Container>
-            <FooterLinkItem icon="at-sign" href="mailto:salines.sebastian@gmail.com">salines.sebastian@gmail.com</FooterLinkItem>
+            <FooterLinkItem icon="at-sign" href="mailto:salines.sebastian@gmail.com?subject=Contact%20from%20sebasalines.github.io%2Fsebasalines">salines.sebastian@gmail.com</FooterLinkItem>
             &nbsp;
             <FooterItem icon="home">Montevideo, Uruguay</FooterItem>
         </Container>
