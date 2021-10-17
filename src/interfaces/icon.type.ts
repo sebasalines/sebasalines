@@ -1,6 +1,0 @@
-export type Icon = 'github'
-| 'at'
-| 'gitlab'
-| 'home'
-| 'globe'
-| 'mail'
