@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;600&family=Rozha+One&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  overflow-x: hidden;
+  background-color: #322E2E;
+}
+
+a {
+  color: inherit;
+}
+
+div#root {
+  flex: 1;
+  display: flex;
+}
